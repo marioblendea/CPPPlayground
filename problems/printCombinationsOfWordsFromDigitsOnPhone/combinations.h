@@ -7,12 +7,12 @@ class Combinations {
         Combinations();
         virtual ~Combinations();
     
-        void printWords(std::string input);
+        void printWords(std::wstring input);
 
     private:
-        void printWords(std::string input, std::string word);
+        void printWords(std::wstring input, std::wstring word);
 
-        wchar_t removeFirstChar(std::string& input);
+        wchar_t removeFirstChar(std::wstring& input);
 
         int convertCharToDigit(wchar_t ch);
 };

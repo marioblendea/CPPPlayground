@@ -7,8 +7,12 @@
 
 int main(){
     std::cout << "Hello world! " << f1() << "\n";
+    int a;
+    std::cin >> a;
+
+
     Combinations c;
-    c.printWords("23");
+    c.printWords(L"23");
     std::cout << "\r\n";
 
     // 
@@ -29,4 +33,6 @@ int main(){
     std::cout << cache.Get(1);    // returns -1 (not found)
     std::cout << cache.Get(3);    // returns 3
     std::cout << cache.Get(4);    // returns 4
+
+    return 0;
 }

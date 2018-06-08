@@ -15,28 +15,28 @@ wchar_t matrix[3][3] = {
 Combinations::Combinations() {}
 Combinations::~Combinations() {}
     
-void Combinations::printWords(std::string input) {
-    std::string word;
+void Combinations::printWords(std::wstring input) {
+    std::wstring word;
     printWords(input, word);
 }
 
-void Combinations::printWords(std::string input, std::string word) {
+void Combinations::printWords(std::wstring input, std::wstring word) {
     if (input.empty()) {
-        cout << word << " ";
+        wcout << word << L" ";
         return;
     }
 
     auto ch = removeFirstChar(input);
     int d = convertCharToDigit(ch) - 2; // 0 and 1 don't have letters in the array
     for(int j = 0; j < 3; j++) {
-        std::string newWord(word);
+        std::wstring newWord(word);
         newWord += matrix[d][j];
         printWords(input, newWord);
     }
         
 }
 
-wchar_t Combinations::removeFirstChar(std::string& input) {
+wchar_t Combinations::removeFirstChar(std::wstring& input) {
     wchar_t firstChar = input[0];
     input.erase(0, 1);
     return firstChar;
