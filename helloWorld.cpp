@@ -1,16 +1,10 @@
 #include <iostream>
 
-#include "file2.h"
 #include "problems/parantheses/parans.h"
 #include "problems/printCombinationsOfWordsFromDigitsOnPhone/combinations.h"
 #include "problems/LRU/LRU.h"
 
 int main(){
-    std::cout << "Hello world! " << f1() << "\n";
-    int a;
-    std::cin >> a;
-
-
     Combinations c;
     c.printWords(L"23");
     std::cout << "\r\n";
