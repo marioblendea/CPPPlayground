@@ -12,9 +12,9 @@ void Permutation::nextPermutation(vector<int>& nums) {
 }
 
 int Permutation::findPosToGoUpNext(std::vector<int>& nums) {
-  for(int i = nums.size() - 1; i > 0; i--) {
+  for(auto i = nums.size() - 1; i > 0; i--) {
     if (nums[i] > nums[i-1])
-      return i-1;
+      return (int)i-1;
   }
   return -1;
 }
@@ -39,6 +39,6 @@ void Permutation::swapAt(int idx1, int idx2, std::vector<int>& nums){
 
 void Permutation::sortPost(int idxStart, std::vector<int>& nums){
   for (int i = 0; i < (nums.size() - idxStart - 1) / 2 ; i++) {
-    swapAt(idxStart + 1 + i, nums.size() - i - 1, nums);
+    swapAt(idxStart + 1 + i, (int)nums.size() - i - 1, nums);
   }
 }

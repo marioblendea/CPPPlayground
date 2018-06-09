@@ -4,11 +4,11 @@
 #include "problems/printCombinationsOfWordsFromDigitsOnPhone/combinations.h"
 #include "problems/LRU/LRU.h"
 #include "problems/nextPermutation/nextPermutation.h"
+#include "gtest/gtest.h"
 
 using namespace std;
 
-int main(){
-    
+int main(int argc, char **argv){
     cout << "Print Combinations for string 23\r\n";
     Combinations c;
     c.printWords(L"23");
@@ -40,5 +40,7 @@ int main(){
     perm.nextPermutation(v);
     for (int i = 0; i <  v.size(); i++)
         std::cout << v[i];
-    return 0;
+ 
+     ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
