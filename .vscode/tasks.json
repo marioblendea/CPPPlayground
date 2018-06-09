@@ -14,7 +14,8 @@
         "helloworld.cpp",
         "problems/printCombinationsOfWordsFromDigitsOnPhone/combinations.cpp",
         "problems/parantheses/parans.cpp",
-        "problems/LRU/LRU.cpp"
+        "problems/LRU/LRU.cpp",
+        "problems/nextPermutation/nextPermutation.cpp"
       ],
       "problemMatcher": [
         "$gcc"

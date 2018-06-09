@@ -12,6 +12,7 @@ add_executable(cppTest
     problems/printCombinationsOfWordsFromDigitsOnPhone/combinations.cpp
     problems/parantheses/parans.cpp
     problems/LRU/LRU.cpp
+    problems/nextPermutation/nextPermutation.cpp
 )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
