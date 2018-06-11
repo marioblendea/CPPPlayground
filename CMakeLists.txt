@@ -46,7 +46,8 @@ add_executable(cppTest
     problems/parantheses/parans.cpp
     problems/LRU/LRU.cpp
     problems/nextPermutation/nextPermutation.cpp
-    helloWorld.test.cpp
+    problems/findSubsequences/findSubsequences.cpp
+    problems/findSubsequences/findSubsequences.test.cpp
 )
 
 # Now simply link against gtest or gtest_main as needed. Eg
