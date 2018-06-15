@@ -25,7 +25,7 @@ class LRUCache {
 
         std::unordered_map<int, Node*> _hashTable;
         Node* _pHead;
-        int _cacheSize;
+        size_t _cacheSize;
 
 
 };

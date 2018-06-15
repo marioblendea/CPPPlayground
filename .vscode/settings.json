@@ -8,6 +8,13 @@
     "unordered_map": "cpp",
     "unordered_set": "cpp",
     "initializer_list": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "istream": "cpp",
+    "optional": "cpp",
+    "ostream": "cpp",
+    "system_error": "cpp",
+    "tuple": "cpp",
+    "type_traits": "cpp",
+    "list": "cpp"
   }
 }

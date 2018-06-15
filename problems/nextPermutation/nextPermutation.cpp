@@ -22,7 +22,7 @@ int Permutation::findPosToGoUpNext(std::vector<int>& nums) {
 int Permutation::findPosWhereNextValueIs(int idxStart, std::vector<int>& nums){
   int min = nums[idxStart + 1];
   int posMin = idxStart + 1;
-  for(int i = idxStart + 2; i < nums.size(); i++) {
+  for(size_t i = idxStart + 2; i < nums.size(); i++) {
     if (nums[i] < min) {
       min = nums[i];
       posMin = i;
@@ -38,7 +38,7 @@ void Permutation::swapAt(int idx1, int idx2, std::vector<int>& nums){
 }
 
 void Permutation::sortPost(int idxStart, std::vector<int>& nums){
-  for (int i = 0; i < (nums.size() - idxStart - 1) / 2 ; i++) {
+  for (size_t i = 0; i < (nums.size() - idxStart - 1) / 2 ; i++) {
     swapAt(idxStart + 1 + i, (int)nums.size() - i - 1, nums);
   }
 }

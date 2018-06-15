@@ -38,7 +38,7 @@ int main(int argc, char **argv){
     Permutation perm;
     vector<int> v = {1,2,4,3,5};
     perm.nextPermutation(v);
-    for (int i = 0; i <  v.size(); i++)
+    for (size_t i = 0; i <  v.size(); i++)
         std::cout << v[i];
  
      ::testing::InitGoogleTest(&argc, argv);

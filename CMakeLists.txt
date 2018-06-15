@@ -35,8 +35,8 @@ endif()
 
 project(cppTest VERSION 0.1.0)
 
-#include(CTest)
-#enable_testing()
+include(CTest)
+enable_testing()
 
 set (CMAKE_CXX_STANDARD 11)
 
@@ -48,6 +48,8 @@ add_executable(cppTest
     problems/nextPermutation/nextPermutation.cpp
     problems/findSubsequences/findSubsequences.cpp
     problems/findSubsequences/findSubsequences.test.cpp
+    problems/findAllWaysToForNumber/findAllWaysToFormNUmber.test.cpp
+    problems/largestNumberFrom2Arrays/largestNumberFrom2Arrays.test.cpp
 )
 
 # Now simply link against gtest or gtest_main as needed. Eg

@@ -31,7 +31,7 @@ class FindSubsequences
       std::unordered_map<char, std::vector<Sequence>> map; 
       
       // intiatialize map with the first letter of each sequence
-      for(auto i = 0; i < sequences.size(); i++) {
+      for(size_t i = 0; i < sequences.size(); i++) {
         if (sequences[i].empty())
           throw "invalid input";
 
