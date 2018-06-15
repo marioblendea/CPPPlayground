@@ -33,15 +33,15 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 
-project(cppTest VERSION 0.1.0)
+project(cppPlaygroud VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
 
 set (CMAKE_CXX_STANDARD 11)
 
-add_executable(cppTest
-    helloWorld.cpp 
+add_executable(cppPlayground
+    playground.cpp 
     problems/printCombinationsOfWordsFromDigitsOnPhone/combinations.cpp
     problems/parantheses/parans.cpp
     problems/LRU/LRU.cpp
@@ -50,10 +50,12 @@ add_executable(cppTest
     problems/findSubsequences/findSubsequences.test.cpp
     problems/findAllWaysToForNumber/findAllWaysToFormNUmber.test.cpp
     problems/largestNumberFrom2Arrays/largestNumberFrom2Arrays.test.cpp
+    problems/ToeplitzMatrix/ToeplitzMatrix.test.cpp
+    problems/leastBricks/leastBricks.test.cpp
 )
 
 # Now simply link against gtest or gtest_main as needed. Eg
-target_link_libraries(cppTest gtest_main)
+target_link_libraries(cppPlayground gtest_main)
 add_test(NAME cppTest_test COMMAND cppTest)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
